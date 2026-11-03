@@ -1,0 +1,10 @@
+{
+  "name": "session-address",
+  "version": "0.1.0",
+  "description": "A Copy session button in the Claude Desktop prompt footer: one click copies this session's local_ id, so another session can SendMessage to it directly",
+  "author": { "name": "ashnurkoff", "url": "https://github.com/ashnurkoff" },
+  "homepage": "https://github.com/ashnurkoff/claude-session-address",
+  "repository": "https://github.com/ashnurkoff/claude-session-address",
+  "license": "MIT",
+  "keywords": ["session", "sendmessage", "cross-session", "desktop"]
+}

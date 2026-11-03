@@ -1,0 +1,19 @@
+{
+  "name": "claude-session-address",
+  "owner": { "name": "ashnurkoff", "url": "https://github.com/ashnurkoff" },
+  "metadata": {
+    "description": "Marketplace for the session-address mod: copy a Claude Desktop session's address for cross-session SendMessage.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "session-address",
+      "source": "./",
+      "description": "A Copy session button in the Claude Desktop prompt footer: one click copies this session's local_ id, so another session can SendMessage to it directly.",
+      "version": "0.1.0",
+      "author": { "name": "ashnurkoff" },
+      "license": "MIT",
+      "keywords": ["session", "sendmessage", "cross-session", "desktop"]
+    }
+  ]
+}
