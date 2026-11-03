@@ -75,7 +75,7 @@ test('a surface that will not copy falls back to pbcopy', async ($, on) => {
   const ui = await $.ui.mount({ ...FOOTER, surface: 'desktop' })
   await ui.press({ key: 'copy-session' })
 
-  expect(runs[0]?.argv).toEqual(['pbcopy'])
+  expect(runs[0]?.argv).toEqual(['/usr/bin/pbcopy'])
   expect(runs[0]?.stdin).toContain(ID)
   await ui.unmount()
 })

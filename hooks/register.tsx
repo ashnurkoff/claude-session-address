@@ -53,9 +53,8 @@ async function copy($: EngineInterface, surface: string, text: string) {
     .copy({ text, surface: surface as never })
     .catch(() => ({ isCopied: false as const }))
   if (ui.isCopied) return true
-  const ran = await $.process
-    .run(['pbcopy'], { stdin: text })
-    .catch(() => undefined)
+  // The one program the mod starts, as fixed text: macOS's clipboard tool.
+  const ran = await $.process.run(['/usr/bin/pbcopy'], { stdin: text }).catch(() => undefined)
 
   return ran?.exitCode === 0
 }
